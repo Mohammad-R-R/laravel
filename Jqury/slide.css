@@ -1,0 +1,19 @@
+*{
+    margin: auto;
+}
+
+.QA{
+    margin-top: 20px;
+
+    width: 80%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.answer{
+    width: 80%;
+    text-align: center;
+    background-color: antiquewhite;
+    display: none;
+    
+}

@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px
+}
+.hide {
+    display: none;
+    position: absolute;
+   left: 2;
+}
+ul{
+    background-color: #232f3e;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.l1{
+    display: inline;
+     margin: 5px;
+}
+.l2{
+    display: inline;
+    margin: 5px; 
+    position: relative;
+
+}
+
+.l2:hover ul{
+    display: block;
+    position: absolute;
+   left: 0;
+   list-style-type: none;
+   border-radius: 2px;
+
+   
+}
+a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+

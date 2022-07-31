@@ -1,0 +1,120 @@
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/1567736.png);
+
+}
+
+.header{
+    text-align: center;
+    color: aliceblue;
+    margin: 80px;
+
+}
+.all h2,h3{
+    display: inline;
+ }
+ .cont{
+    padding: 1px;
+    width: 30%;
+    height:240px ;
+    background-color: rgb(200, 206, 211);
+    /* background-color: hsla(50, 33%, 25%, 1.00); */
+    margin: auto;
+    color: black;
+    border-radius: 5px;
+    margin-top: 50px;
+    position: relative;
+    
+ }
+
+ .email{
+    text-align: start;
+    margin-top: 35px;
+    margin-bottom: 20px;
+ }
+
+ .logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr);
+    margin: auto;
+    background-size: 50px 50px;
+
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+}
+
+.cont2{
+    margin-left: 30px;
+}
+
+.email input{
+    width: 90%;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+.password input{
+    width: 90%;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.btn{
+    text-align: center;
+}
+.bt{
+    background-color: rgb(6, 129, 170);
+    border-color: whitesmoke;
+    box-shadow: 2px blueviolet;
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+    height: 25px;
+    font-weight: bold;
+
+
+}
+.bt:hover{
+    background-color: rgb(7, 83, 108);
+}
+.text{
+    text-align: center;
+    color: cadetblue;
+
+}
+.text p a{
+    text-decoration: none;
+}
+
+.password input:focus{
+    outline-color: aqua;
+}
+
+.email input:focus{
+    outline-color: aqua;
+}
+#password{
+    background: url("https://icon-library.com/images/img_173115.png") no-repeat  100%;
+    background-color: rgb(218, 236, 238);
+    background-size: 16px;
+    background-position: left;
+    background: position x -20px;
+    padding-left:20px;
+
+
+}
+#email{
+    background: url("https://cdn1.iconfinder.com/data/icons/picons-social/57/61-google-inbox-512.png") no-repeat  100%;
+    background-color: rgb(218, 236, 238);
+    background-size: 16px;
+    background-position: left;
+    background: position x -20px;
+    padding-left:20px;
+}
+

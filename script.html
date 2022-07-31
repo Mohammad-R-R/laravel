@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        var object={
+        "users":[
+            {id:1,name:"hey", phone:"1234560"},
+            {id:1,name:"hey", phone:"1234560454545"},
+            {id:1,name:"hey", phone:"987"},
+
+
+    ]
+        }
+        console.log(object.users[0]);
+        object.users.forEach(element => {console.log(object.users);
+            
+        });
+       
+    </script> -->
+
+
+    <!-- <script>
+        var array=[1,3,4,5,62,2];
+        var temp=array[0];
+        
+        Array.prototype.max=function () {
+            for(let i =0;i<this.length;i++){
+                if(this[i]>temp)
+                temp=this[i];
+            }
+            console.log(temp);
+        };
+
+        Array.prototype.min=function () {
+            for(let i =0;i<this.length;i++){
+                if(this[i]<temp)
+                temp=this[i];
+            }
+            console.log(temp);
+        };
+
+        array.max();
+        array.min();
+    </script> -->
+
+    <script>
+
+        var univs = {
+
+            university: {
+
+                "birzeit": {
+
+                    address: "Ramallah",
+
+                    collage: [
+
+                        {
+                            id: 1, name: "CS", Special: [
+
+                                { id: 1, name: "Computer Science" },
+
+                                { id: 2, name: "Security" }
+
+                            ]
+                        },
+
+
+
+                        {
+                            id: 2, name: "law", Special: [
+
+                                { id: 1, name: "law 1" },
+
+                                { id: 2, name: "law 2" }
+
+                            ]
+                        }
+
+                    ]
+
+                }
+
+
+
+
+
+            },
+
+
+
+            getUniversity: function (name) {
+
+                return this.university[name]
+
+            },
+
+
+
+            getAllCollage: function (name) {
+
+                return this.getUniversity(name).collage;
+
+            },
+
+
+
+            getCollage: function (uName, cName) {
+
+                return this.getUniversity(uName).collage.find(function (collage) {
+
+                    return collage.name == cName;
+
+                });
+
+            },
+
+            getAllSpecials: function (uName, cName) {
+
+                return this.getCollage(uName, cName).Special;
+
+            },
+
+        }
+        console.log(univs.getUniversity("birzeit"));
+        console.log(univs.getAllSpecials("birzeit","CS"));
+        
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

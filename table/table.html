@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="script.js">
+    <title>table</title>
+</head>
+<body>
+
+    <div class="all">
+        <div class="content">
+            <div class="header">
+                <h2>university view</h2>
+            </div>
+            <div class="body">
+                <div class="select">
+                    <select name="uni" id="uni" onchange="setuni(event)">
+                        <option value=""  disabled selected> select your university</option>
+                    </select>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <th>id</th>
+                            <th> Name</th>
+                        </thead>
+                        <tbody id="cel">
+                            <tr >
+                                <td ></td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <script src="script.js"></script>
+                    <script>
+                        // univs.getUniversity();
+                        console.log( univs.getAllUniversity());
+                        html_unis='<option value=""  disabled selected> select your university</option>';
+
+                        Object.keys(univs.getAllUniversity()).forEach(element => {
+                            html_unis +=`<option value="${element}"> ${element} </option>`
+                            
+                        });
+                       document.getElementById("uni").innerHTML=html_unis;
+                   
+                        
+                       html_collge =' ' ;
+                        function setuni(event){
+                            
+                            var name = event.target.value
+                            // alert(name);
+                            univs.getAllCollage(name).forEach(element => {
+                                html_collge +=`<tr><td>${element.id} </td> <td> ${element.name}</td></tr>`
+                            
+                        });
+                        document.getElementById("cel").innerHTML= html_collge;
+                    }
+                        
+
+                    </script>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
